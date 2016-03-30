@@ -7,20 +7,24 @@
 
 <pre>
 
+
 require 'zerion_autoload.php';
 
 use iForm\Auth\iFormTokenResolver;
 
 //instantiate iFormTokenResolver with required parameters and call getToken() method
 
-$url = "https://SERVER_NAME.iformbuilder.com/exzact/api/oauth/token";
-$client = "XXXXXX";
-$secret = "XXXXXX";
+$url = "https://servername.iformbuilder.com/exzact/api/oauth/token";
+$client = "XXXXX";
+$secret = "XXXXX";
 
-$token = (new iFormTokenResolver($url, $client, $secret))->getToken(); 
+$token = (new Iform\Auth\iFormTokenResolver($url, $client, $secret))->getToken();
+echo $token."\n";
 
 
 </pre>
+
+Fill in url, client and secret variables and run the index.php.  If ran through terminal, it will return with the access token.
 
 <h2>API Access Requirement</h2>
 
