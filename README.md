@@ -14,7 +14,7 @@ use iForm\Auth\iFormTokenResolver;
 
 //instantiate iFormTokenResolver with required parameters and call getToken() method
 
-$url = "https://servername.iformbuilder.com/exzact/api/oauth/token";
+$url = "https://SERVERNAME.iformbuilder.com/exzact/api/oauth/token";
 $client = "XXXXX";
 $secret = "XXXXX";
 
@@ -24,7 +24,7 @@ echo $token."\n";
 
 </pre>
 
-Fill in url, client and secret variables and run the index.php.  If ran through terminal, it will return with the access token.
+Repalce SERVERNAME with server company's server name then fill in the client and secret key.  The run index.php.   If ran through terminal, it will return with the access token.
 
 <h2>API Access Requirement</h2>
 
